@@ -2,6 +2,12 @@ import numpy as np
 
 
 def add_impulse_noise(image: np.ndarray,ratio: float):
+    '''
+    Adds impulse noise to the image
+    :param image: 2D numpy array of the image
+    :param ratio: noise intensity ratio
+    :return: 2D numpy array of the noisy image
+    '''
     x = image.shape[0]
     y = image.shape[1]
 
